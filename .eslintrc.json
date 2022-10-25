@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+	"plugins": ["@typescript-eslint", "react"],
+
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"extends": [
+		"next/core-web-vitals",
+		"plugin:jest-dom/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"airbnb",
+		"airbnb-typescript",
+		"prettier"
+	],
+	"rules": {
+		"@typescript-eslint/no-unused-vars": "error",
+		"react/function-component-definition": [2, {
+			"namedComponents": "arrow-function",
+			"unnamedComponents": "arrow-function"
+		}]
+	},
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts"]
+		}
+	}
 }

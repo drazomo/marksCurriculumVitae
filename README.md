@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mark's CV
 
-## Getting Started
+![](https://img.shields.io/badge/Name-MarksCV-brightgreen?style=plastic&labelColor=inactive)
+![](https://img.shields.io/badge/Version-v0.0.1-blueviolet?style=plastic&labelColor=inactive)
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
+## Overview 👓
+
+Source code of my personal website. https://markrasavong.com
+
+<br>
+
+## Features ✨✨✨
+
+The features of `Mark's CV` are -
+
+- Awesome viewings of this amazing frontend developer!
+
+<br>
+
+## Optimizations 🔧🔧🔧
+
+If you like to contribute any features, fix bugs, or optimize a current feature, my contact information is listed bellow the readme.md 😃
+
+<br>
+
+## Dependencies 📦📦📦
+
+The list of dependencies used in the frontend are :
+
+```javascript
+'@testing-library/jest-dom'
+'@testing-library/react'
+'@testing-library/user-event'
+'react'
+'react-dom'
+'next'
+'react-redux'
+'@reduxjs/toolkit'
+'@mui/material'
+'@emotion/react'
+'@emotion/styled'
+'styled-components'
+'swr'
+'typescript'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The list of dependencies used for code quality and test are :
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```javascript
+'@testing-library/jest-dom'
+'@testing-library/react'
+'eslint'
+'prettier'
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How to run 🚀🚀🚀
 
-## Learn More
+- First, copy the url of this project
+- Then open your terminal on your local computer and -
+  - navigate to the location you want to create the project in (eg - home or c:/)
+  - enter the command `git clone <url-of-this-project>`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone <url-of-this-project> <name-of-folder>`
+  - `cd` into the project folder
+  ```
+  npm install
+  npm run dev
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+## Lessons Learned 🏫🏫🏫
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ using styled.d.ts to extend DefaultTheme in styled-components @/src/themes/default.ts<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br>
 
-## Deploy on Vercel
+## Where to find more 📞💻📧
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Personal Website:** https://markrasavong.com/ <br>
+**Galería App Repository:** https://github.com/MarkRasavong/galeriaApp <br>
+**My Github Repositories:** https://github.com/MarkRasavong?tab=repositories <br>
+**Email:** rasavong.mark@gmail.com <br>
+**Mobile / WhatsApp:** +34 666 996 519
