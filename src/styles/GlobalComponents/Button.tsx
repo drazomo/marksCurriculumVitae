@@ -3,7 +3,7 @@ import { ButtonBack, ButtonFront } from '.'
 
 interface ButtonProps {
 	children: React.ReactNode
-	onClick: (event: MouseEvent) => void
+	onClick: () => void
 	alt: boolean
 	form: boolean
 	disabled: boolean

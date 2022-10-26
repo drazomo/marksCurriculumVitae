@@ -72,6 +72,7 @@ The list of dependencies used for code quality and test are :
 ## Lessons Learned 🏫🏫🏫
 
 ✅ using styled.d.ts to extend DefaultTheme in styled-components @/src/themes/default.ts<br>
+✅ using making a interface all optional `Partial<NameOfInterface>` @/src/styles/GlobalComponents/index.ts<br>
 
 <br>
 
