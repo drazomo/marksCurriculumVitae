@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import Hero from '../components/Hero'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
 
 const Home: NextPage = () => (
 	<Layout>
-		<Section>Hello World!</Section>
+		<Section grid>
+			<Hero />
+		</Section>
 	</Layout>
 )
 
