@@ -19,9 +19,8 @@ const Home: NextPage = (
 ) => {
 	const { socials } = props
 
-	console.log(socials)
 	return (
-		<Layout>
+		<Layout socials={socials as SocialsInterface[]}>
 			<Section grid>
 				<Hero
 					cv={socials.find(({ name }: SocialsInterface) => name === 'cvGoogle')}
