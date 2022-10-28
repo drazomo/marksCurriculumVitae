@@ -24,35 +24,40 @@ export interface ProjectInterface {
 	image: string
 }
 
+export interface TechInterface {
+	id: string
+	name: string
+	tags: string
+}
+
 const Home: NextPage = ({
 	socials,
 	projects,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
-	console.log(projects)
-
-	return (
-		<Layout socials={socials}>
-			<Section grid>
-				<Hero
-					cv={socials.find(({ name }: SocialsInterface) => name === 'cvGoogle')}
-				/>
-				<HeroAnimation />
-			</Section>
-			<Projects projects={projects} />
-			<Technologies />
-			<Timeline />
-		</Layout>
-	)
-}
+	tech,
+}: InferGetStaticPropsType<typeof getStaticProps>) => (
+	<Layout socials={socials}>
+		<Section grid>
+			<Hero
+				cv={socials.find(({ name }: SocialsInterface) => name === 'cvGoogle')}
+			/>
+			<HeroAnimation />
+		</Section>
+		<Projects projects={projects} />
+		<Technologies tech={tech} />
+		<Timeline />
+	</Layout>
+)
 
 export const getStaticProps: GetStaticProps = async () => {
 	const socials = await tableData('socialLinks')
 	const projects = await tableData('projects')
+	const tech = await tableData('tech')
 
 	return {
 		props: {
 			socials,
 			projects,
+			tech,
 		},
 	}
 }
