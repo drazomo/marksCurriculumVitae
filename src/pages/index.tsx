@@ -14,20 +14,31 @@ export interface SocialsInterface {
 	name: string
 }
 
-const Home: NextPage = (
-	props: InferGetStaticPropsType<typeof getStaticProps>
-) => {
-	const { socials } = props
+export interface ProjectInterface {
+	id: string
+	name: string
+	source: string
+	visit: string
+	description: string
+	tags: string
+	image: string
+}
+
+const Home: NextPage = ({
+	socials,
+	projects,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+	console.log(projects)
 
 	return (
-		<Layout socials={socials as SocialsInterface[]}>
+		<Layout socials={socials}>
 			<Section grid>
 				<Hero
 					cv={socials.find(({ name }: SocialsInterface) => name === 'cvGoogle')}
 				/>
 				<HeroAnimation />
 			</Section>
-			<Projects />
+			<Projects projects={projects} />
 			<Technologies />
 			<Timeline />
 		</Layout>
@@ -36,10 +47,12 @@ const Home: NextPage = (
 
 export const getStaticProps: GetStaticProps = async () => {
 	const socials = await tableData('socialLinks')
+	const projects = await tableData('projects')
 
 	return {
 		props: {
 			socials,
+			projects,
 		},
 	}
 }
