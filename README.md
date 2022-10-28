@@ -1,7 +1,7 @@
 # Mark's CV
 
 ![](https://img.shields.io/badge/Name-MarksCV-brightgreen?style=plastic&labelColor=inactive)
-![](https://img.shields.io/badge/Version-v0.0.1-blueviolet?style=plastic&labelColor=inactive)
+![](https://img.shields.io/badge/Version-v1.0-blueviolet?style=plastic&labelColor=inactive)
 
 <br>
 
@@ -30,29 +30,36 @@ If you like to contribute any features, fix bugs, or optimize a current feature,
 The list of dependencies used in the frontend are :
 
 ```javascript
-'@testing-library/jest-dom'
-'@testing-library/react'
-'@testing-library/user-event'
+'next'
 'react'
 'react-dom'
-'next'
-'react-redux'
-'@reduxjs/toolkit'
-'@mui/material'
-'@emotion/react'
-'@emotion/styled'
+'react-icons'
 'styled-components'
-'swr'
-'typescript'
+'styled-normalize'
 ```
 
 The list of dependencies used for code quality and test are :
 
 ```javascript
-'@testing-library/jest-dom'
-'@testing-library/react'
-'eslint'
-'prettier'
+    "@types/node": "18.11.4",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "^12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.4"
 ```
 
 <br>
@@ -73,6 +80,7 @@ The list of dependencies used for code quality and test are :
 
 ✅ using styled.d.ts to extend DefaultTheme in styled-components @/src/themes/default.ts<br>
 ✅ using making a interface all optional `Partial<NameOfInterface>` @/src/styles/GlobalComponents/index.ts<br>
+✅ CSS Properties: mask-image, scrollbar-width, scroll-snap-type/align, touch-action
 
 <br>
 
