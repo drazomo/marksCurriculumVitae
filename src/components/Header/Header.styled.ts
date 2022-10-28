@@ -132,6 +132,7 @@ export const SocialIcons = styled.a`
 		cursor: pointer;
 	}
 `
+
 export const ImageContainer = styled.div`
 	height: 2.5rem;
 	width: 2.5rem;
