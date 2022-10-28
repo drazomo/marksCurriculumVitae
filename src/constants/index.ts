@@ -39,3 +39,13 @@ export const projects = [
 		id: 3,
 	},
 ]
+
+export const TimeLineData = [
+	{ year: 2017, text: 'My first "hello world"' },
+	{ year: 2019, text: 'Dedicated a whole year learning web dev' },
+	{ year: 2020, text: 'Started creating my own projects' },
+	{
+		year: 2022,
+		text: 'Continuous Improvment: Learning new tech and improving skills',
+	},
+]
