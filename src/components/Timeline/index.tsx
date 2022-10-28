@@ -80,7 +80,7 @@ const Timeline = () => {
 				<>
 					{TimeLineData.map((item, index) => (
 						<CarouselMobileScrollNode
-							key={index}
+							key={`timelineNode_${Math.random()}`}
 							final={index === TOTAL_CAROUSEL_COUNT - 1}
 						>
 							<CarouselItem
@@ -135,7 +135,7 @@ const Timeline = () => {
 			<CarouselButtons>
 				{TimeLineData.map((item, index) => (
 					<CarouselButton
-						key={index}
+						key={`timelineBtn_${Math.random()}`}
 						index={index}
 						active={activeItem}
 						onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>

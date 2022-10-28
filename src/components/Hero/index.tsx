@@ -4,6 +4,7 @@ import {
 	SectionTitle,
 } from '@/src/styles/GlobalComponents'
 import Button from '@/src/styles/GlobalComponents/Button'
+import Link from 'next/link'
 import React from 'react'
 import { LeftSection } from './Hero.styled'
 
@@ -15,17 +16,13 @@ const Hero = () => (
 				I'm Mark Rasavong
 			</SectionTitle>
 			<SectionText>Front End Developer</SectionText>
-			<Button
-				onClick={() =>
-					window
-						.open(
-							'https://drive.google.com/file/d/1SneqeMWWjDdrNUwWi254NUimUkpVU9gQ/view?usp=sharing' as unknown as URL
-						)!
-						.focus()
-				}
+			<a
+				href="https://drive.google.com/file/d/1SneqeMWWjDdrNUwWi254NUimUkpVU9gQ/view?usp=sharing"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
-				Curriculum Vitae
-			</Button>
+				<Button>Curriculum Vitae</Button>
+			</a>
 		</LeftSection>
 	</Section>
 )

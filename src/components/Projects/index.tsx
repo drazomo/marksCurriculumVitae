@@ -26,7 +26,7 @@ const Projects = () => (
 		<GridContainer>
 			{projects.map(
 				({ id, image, title, tags, source, visit, description }) => (
-					<BlogCard key={id}>
+					<BlogCard key={`BlogCard_${Math.random()}`}>
 						<Img src={image} />
 						<TitleContent>
 							<HeaderThree titleH3>{title}</HeaderThree>
@@ -37,7 +37,7 @@ const Projects = () => (
 							<TitleContent>Stack</TitleContent>
 							<TagList>
 								{tags.map((tag, i) => (
-									<Tag key={i}>{tag}</Tag>
+									<Tag key={`tag_${Math.random()}`}>{tag}</Tag>
 								))}
 							</TagList>
 						</div>
