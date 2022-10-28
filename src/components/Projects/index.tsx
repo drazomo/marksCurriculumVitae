@@ -39,7 +39,7 @@ const Projects = ({ projects }: ProjectsProps) => (
 					<div>
 						<TitleContent>Tags</TitleContent>
 						<TagList>
-							{tags.split(', ').map((tag, i) => (
+							{tags?.split(', ').map((tag, i) => (
 								<Tag key={`tag_${i}_${Math.random()}`}>{tag}</Tag>
 							))}
 						</TagList>
