@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { DiCssdeck } from 'react-icons/di'
+import avatar from '@/public/images/avatar.png'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 import {
@@ -11,7 +11,9 @@ import {
 	Div3,
 	NavLink,
 	SocialIcons,
+	ImageContainer,
 } from './Header.styled'
+import Image from 'next/image'
 
 const Header = () => (
 	<Container>
@@ -25,7 +27,15 @@ const Header = () => (
 						marginBottom: '2.1vh',
 					}}
 				>
-					<DiCssdeck size="3rem" /> <BrandSpan>Mark Rasavong</BrandSpan>
+					<ImageContainer>
+						<Image
+							src={avatar}
+							alt="Mark Rasavong's web logo"
+							width={'100%'}
+							height={'100%'}
+						/>
+					</ImageContainer>
+					<BrandSpan>Mark Rasavong</BrandSpan>
 				</a>
 			</Link>
 		</Div1>

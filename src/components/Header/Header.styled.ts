@@ -44,7 +44,7 @@ export const Div2 = styled.div`
 export const Div3 = styled.div`
 	grid-area: 1 / 5 / 2 / 6;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -131,4 +131,11 @@ export const SocialIcons = styled.a`
 		transform: scale(1.2);
 		cursor: pointer;
 	}
+`
+
+export const ImageContainer = styled.div`
+	height: 2.5rem;
+	width: 2.5rem;
+
+	margin-right: 0.5em;
 `
