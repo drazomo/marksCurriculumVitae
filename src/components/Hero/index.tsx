@@ -1,30 +1,49 @@
+import { SocialsInterface } from '@/src/pages'
 import {
 	Section,
 	SectionText,
 	SectionTitle,
+	StyledLink,
 } from '@/src/styles/GlobalComponents'
 import Button from '@/src/styles/GlobalComponents/Button'
-import Link from 'next/link'
 import React from 'react'
 import { LeftSection } from './Hero.styled'
 
-const Hero = () => (
-	<Section row noPadding>
-		<LeftSection>
-			<SectionTitle main>
-				Hello there, <br />
-				I'm Mark Rasavong
-			</SectionTitle>
-			<SectionText>Front End Developer</SectionText>
-			<a
-				href="https://drive.google.com/file/d/1SneqeMWWjDdrNUwWi254NUimUkpVU9gQ/view?usp=sharing"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Button>Curriculum Vitae</Button>
-			</a>
-		</LeftSection>
-	</Section>
-)
+interface HeroInterface {
+	socials: SocialsInterface[]
+}
+
+const Hero = ({ socials }: HeroInterface) => {
+	const link = (query: string) =>
+		socials.find(({ name }: SocialsInterface) => name === query)?.link
+
+	return (
+		<Section row noPadding>
+			<LeftSection>
+				<SectionTitle main>
+					Hello there, <br />
+					I'm Mark Rasavong
+				</SectionTitle>
+				<SectionText>Front End Developer</SectionText>
+				<Button>
+					<StyledLink
+						href={link('cvGoogle')}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Curriculum Vitae
+					</StyledLink>
+				</Button>
+				<StyledLink
+					href={link('portfolioSauce')}
+					target="_blank"
+					rel="nonreferrer noopener"
+				>
+					<p>Check out this portfolio's soruce code!</p>
+				</StyledLink>
+			</LeftSection>
+		</Section>
+	)
+}
 
 export default Hero
