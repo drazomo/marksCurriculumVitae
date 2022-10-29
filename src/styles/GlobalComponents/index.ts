@@ -322,3 +322,9 @@ export const LinkIconImg = styled.div<Partial<LinkIcnImgProps>>`
 		height: ${({ large }) => (large ? '32px' : '16px')};
 	}
 `
+
+export const StyledLink = styled.a`
+	background-clip: inherit;
+	-webkit-background-clip: text;
+	color: rgba(255, 255, 255, 0.75);
+`

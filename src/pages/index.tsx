@@ -37,9 +37,7 @@ const Home: NextPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
 	<Layout socials={socials}>
 		<Section grid>
-			<Hero
-				cv={socials.find(({ name }: SocialsInterface) => name === 'cvGoogle')}
-			/>
+			<Hero socials={socials} />
 			<HeroAnimation />
 		</Section>
 		<Projects projects={projects} />
