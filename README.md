@@ -1,7 +1,7 @@
 # Mark's CV
 
 ![](https://img.shields.io/badge/Name-MarksCV-brightgreen?style=plastic&labelColor=inactive)
-![](https://img.shields.io/badge/Version-v1.0-blueviolet?style=plastic&labelColor=inactive)
+![](https://img.shields.io/badge/Version-v2.0-blueviolet?style=plastic&labelColor=inactive)
 
 <br>
 
@@ -16,6 +16,7 @@ Source code of my personal website. https://markrasavong.com
 The features of `Mark's CV` are -
 
 - Awesome viewings of this amazing frontend developer!
+- Used Airtable API to display projects and links that may change in the future which avoids unnecessary commits to this repo.
 
 <br>
 
