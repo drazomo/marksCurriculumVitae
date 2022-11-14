@@ -22,7 +22,7 @@ The features of `Mark's CV` are -
 
 ## Optimizations 🔧🔧🔧
 
-If you like to contribute any features, fix bugs, or optimize a current feature, my contact information is listed bellow the readme.md 😃
+If you like to contribute any features, fix bugs, or optimize a current feature, my contact information is listed below the readme.md 😃
 
 <br>
 
