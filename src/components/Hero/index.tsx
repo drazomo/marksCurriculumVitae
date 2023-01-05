@@ -39,7 +39,7 @@ const Hero = ({ socials }: HeroInterface) => {
 					target="_blank"
 					rel="nonreferrer noopener"
 				>
-					<p>Check out this portfolio's soruce code!</p>
+					<p>Check out this portfolio source code!</p>
 				</StyledLink>
 			</LeftSection>
 		</Section>
