@@ -67,7 +67,7 @@ const Technologies = ({ tech }: TecnologiesProps) => {
 						<ListParagraph>
 							<>
 								Experience with <br />
-								{tecchnology('misc')}
+								{tecchnology('programming & tools')}
 							</>
 						</ListParagraph>
 					</ListContainer>
