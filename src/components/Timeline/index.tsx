@@ -70,11 +70,13 @@ const Timeline = () => {
 		<Section id="about">
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>
-				From teaching English to deploying my first fullstack web application, I
-				knew I was captivated in the world of software development. Tech offered
-				me infinite opportunities to progress and improve in creating high
-				quality software. Enthusiastic, focused, and motivated developer
-				applying theoretical concepts to the practical world.
+				My journey, spanning from teaching English to successfully deploying my
+				inaugural fullstack web application, unveiled my passion for the dynamic
+				realm of software development. The tech landscape has granted me
+				boundless avenues for growth, enabling me to channel theoretical
+				concepts into tangible, high-quality software solutions. I am an
+				enthusiastic, focused, and motivated developer, eager to bridge theory
+				and practice for exceptional results.
 			</SectionText>
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
